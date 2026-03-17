@@ -3,9 +3,9 @@
   "type": "m3u",
   "lives": [
     {
-      "name": "My IPTV",
-      "url": "https://raw.githubusercontent.com/jkfai/my-iptv/main/channels.m3u",
-      "type": 0
+      "name": "APTV 全球直播",
+      "type": 0,
+      "url": "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u"
     }
   ]
 }
