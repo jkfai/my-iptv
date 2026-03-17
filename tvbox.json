@@ -1,0 +1,9 @@
+{
+  "lives": [
+    {
+      "name": "My IPTV",
+      "type": 0,
+      "url": "file:///storage/emulated/0/Download/channels.m3u"
+    }
+  ]
+}

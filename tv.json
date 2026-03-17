@@ -1,0 +1,34 @@
+const https = require('https');
+
+const url = 'https://epg.pw/test_channels.m3u';
+
+https.get(url, res => {
+  let data = '';
+
+  res.on('data', chunk => data += chunk);
+
+  res.on('end', () => {
+    const lines = data.split('\n');
+    const result = [];
+
+    let current = {};
+
+    lines.forEach(line => {
+      line = line.trim();
+
+      if (line.startsWith('#EXTINF')) {
+        const name = line.split(',')[1];
+        current = { name: name || '' };
+      } else if (line && !line.startsWith('#')) {
+        current.url = line;
+        result.push(current);
+        current = {};
+      }
+    });
+
+    console.log(JSON.stringify(result, null, 2));
+  });
+
+}).on('error', err => {
+  console.error('Error:', err.message);
+});
