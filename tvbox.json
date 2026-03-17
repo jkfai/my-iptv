@@ -1,9 +1,11 @@
 {
+  "version": 1,
+  "type": "m3u",
   "lives": [
     {
       "name": "My IPTV",
-      "type": 0,
-      "url": "file:///storage/emulated/0/Download/channels.m3u"
+      "url": "https://raw.githubusercontent.com/jkfai/my-iptv/main/channels.m3u",
+      "type": 0
     }
   ]
 }
