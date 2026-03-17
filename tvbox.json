@@ -1,11 +1,13 @@
 {
-  "version": 1,
-  "type": "m3u",
   "lives": [
     {
-      "name": "APTV 全球直播",
-      "type": 0,
-      "url": "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u"
+      "group": "默认分类",
+      "channels": [
+        {
+          "name": "APTV 全球直播",
+          "url": "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u"
+        }
+      ]
     }
   ]
 }
